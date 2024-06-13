@@ -25,7 +25,8 @@ Pagma Solidity version of 0.8.18 or higher
 
 ### Constructer
 + The constructor function initializes the state variables of the contract with the values provided as parameters during contract deployment. Additionally, it assigns the initial salary to the address that deployed the contract, setting up the initial state of the contract.
-+ It takes three parameters `_name`, `_Job`, and `_Salary` 
++ It takes three parameters `_name`, `_Job`, and `_Salary` .
++ `memory`: special data location that is used to denote temporary storage for variables. It is a type of storage that exists only during the execution of a function.
 ```solidity
 constructor(string memory _name, string memory _Job, uint _Salary) {
         name = _name;
